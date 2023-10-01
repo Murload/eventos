@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario mascotas</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+    <body onload="mensaje()">
+    
+
+    <form id="formulario">
+        <label for="namecli"> Nombre cliente *</label>
+        <input type="text" id="namecli" name="namecli" required style='text-transform:uppercase'>
+        <br><label for="lastcli">Apellido cliente *</label>
+        <input type="text" id="lastcli" name="lastcli" required>
+        <br><label for="namepet">Nombre de mascota *</label >
+        <input type="text" id="namepet" name="namepet" required>
+        <br><label for="selectcon">Motivo de consulta *</label>
+        <select name="selectcon" id="selectcon" required>
+            <option value="" disabled selected>Seleccione</option>
+            <option value="enfermedad">Enfermedad</option>
+            <option value="consulta">Consulta periodica</option>
+            <option value="limpieza">Limpieza</option>
+            <option value="vacunacion">Vacunación</option>
+            <option value="castracion">Castración</option>
+            <option value="otro">Otro</option>
+        </select>
+        <br>
+        <label for="vetvet">Veterinario acargo *</label>
+        <input type="text" id="vetvet" name="vetvet" required>
+        
+    </form>
+    
+    <button onclick="agregarelemento()">Agregar elementos</button>
+    
+
+
+
+
+
+</body>
+
+
+<script src="../js/index.js"></script>
+
+
+</html>
